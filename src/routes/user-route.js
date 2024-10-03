@@ -11,15 +11,17 @@ import {
 
 import check_role from '../middleware/check_role'
 import check_token from '../middleware/check_token'
-import cep_endereco from '../middleware/via_cep'
+import via_cep from '../middleware/via_cep'
 
 const router = Router()
 
-router.post
-router.get
-router.get
-router.put
-router.delete
+router.post('/', check_token, check_role(['ADM']), via_cep, store)
+router.get('/', check_token, check_role(['USU']), index)
+router.get('/:id', check_token, show)
+router.put('/:id', check_token, via_cep, update)
+router.delete('/:id', check_token, destroy)
 
-router.post
-router.post
+router.post('/signup', signup)
+router.post('/login', login)
+
+export default router
