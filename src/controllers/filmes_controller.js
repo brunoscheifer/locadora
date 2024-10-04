@@ -1,4 +1,4 @@
-import Filme from "../models/filmes-model";
+import Filme from "../models/filmes-model.js";
 
 export const store = async (req, res) => {
     try {

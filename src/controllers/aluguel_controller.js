@@ -1,4 +1,4 @@
-import Aluguel from "../models/aluguel-model";
+import Aluguel from "../models/aluguel-model.js";
 
 export const store = async (req, res) => {
     try {

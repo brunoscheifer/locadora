@@ -7,11 +7,11 @@ import {
     destroy,
     signup,
     login
-} from '../controllers/users-controller'
+} from '../controllers/users_controller.js'
 
-import check_role from '../middleware/check_role'
-import check_token from '../middleware/check_token'
-import via_cep from '../middleware/via_cep'
+import check_role from '../middleware/check_role.js'
+import check_token from '../middleware/check_token.js'
+import via_cep from '../middleware/via_cep.js'
 
 const router = Router()
 
